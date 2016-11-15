@@ -1,0 +1,13 @@
+@mixin boxShadow($color) { 
+	-webkit-box-shadow: 10px 10px 5px 0 $color;
+	-moz-box-shadow: 10px 10px 5px 0 $color; 
+	box-shadow: 10px 10px 5px 0 $color;
+}
+@mixin Border($per) {
+	-webkit-border-radius:$per;
+	-moz-border-radius:$per; 
+	-ms-border-radius:$per;
+}
+@mixin bord($color,$side) {
+	border-#{$side}-color: 10px solid $color;
+}

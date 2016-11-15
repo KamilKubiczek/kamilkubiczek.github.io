@@ -1,0 +1,33 @@
+@import "mixin";
+
+footer .menu {
+	background: $fontColor;
+	
+	li {
+		display: inline-block;
+		padding-left: 10px;
+		@include Border(20%);
+		&:first-child{
+				background: $font4Color;			 
+			}
+		&:last-child{
+				background: $font5Color;
+				text-align: right;
+				margin:10px;
+			
+			}
+		a{
+			text-decoration: none;
+			&:hover{
+				color: $font3Color;
+			}
+			&:last-child{
+					&:hover{
+					color: $font2Color;
+					}
+			
+			}
+			
+		}
+	}
+}
