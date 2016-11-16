@@ -1,4 +1,4 @@
-$fontSize: 16px;
+$fontSize: 12px;
 
 
 
@@ -7,7 +7,7 @@ $mobile: "(max-width: 767px)";
 $tablet: "(min-width: 768px) and (max-width: 1023px)"; 
 $desktop: "(min-width: 1024px)";
 @mixin Size($font){
-	font-size: 18px + $font;
+	font-size: 12px + $font;
 }
 
 p {
@@ -96,6 +96,19 @@ height: 300vh; }
 @media (max-width: 550px) { [class*='col-'] {
 width: 100%; }
 }
+@media (max-width: 550px) { [id*='header'] {
+background-size: auto;
+ }
+}
+@media (max-width: 550px) { [class*='contact'] {
+border-right: none  !important;
+border-bottom: 1px solid black  !important;}
+}
+@media (max-width: 550px) { [class*='contact_info'] {
+
+margin-bottom: 0  !important;}
+}
+
 
 
 @media (max-width: 550px) { [class*='slider'] {

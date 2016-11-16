@@ -25,7 +25,9 @@ $("#header").mousemove(function(e){
 
  //$('#sstar').delay(1000).animate({'opacity':1}, 300);
  //var refreshId = setInterval(function() {
+var width = $(window).width();
 function star() {
+ if (!width < 550 ) { 
  $('#sstar').animate({
                     left: '-120px',
                     top: '500px',
@@ -38,15 +40,40 @@ function star() {
 
 
 
+}
+else { 
+ $('#sstar').animate({
+                   
+                   // height: '150px',
+                    //width: '150px'
+                });
 
+
+
+}
 };
 setInterval(function() {
    star();
 }, 4300);
+
+
+
+
+//var pix = 550px; 
+      
+
+
+
+
 //star();
 //setInterval(1);
       // Do something every 5 seconds
 //}, 1000);
+
+
+
+
+
 
 
 // MENU SLIDE DOWN
@@ -284,6 +311,7 @@ if (scrollTop > stickyNavTop && width > 550 && !btn.hasClass('open')) {
 
 } else if (width < 550 && !btn.hasClass('open')) { 
   //console.log('500')
+   // $('.title').find('h2').css('font-size', '12vh');
     btn.css('position','fixed');
     btn.removeClass('hidden-btn');
     menu2.addClass('hidden-nav');
