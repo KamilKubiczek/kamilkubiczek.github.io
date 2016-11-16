@@ -137,11 +137,7 @@
 		     <img class='slider' src="images/3.jpeg">
 		  
 		    
-		</div>
-		<div class='buttons'>
-			<div id="prevPicture" class="paginate left"><img src="images/back.png"></div>
-			<div id="nextPicture" class="paginate right"><img src="images/next.png"></div>	
-		</div>		
+		</div>	
 	</section>
 		<div class='bottom_big_2 bottom_mod_2'>
 			<a href="#contact">
@@ -167,19 +163,38 @@
 		</div>	
 		<div class='col-4' id='form'>
 			
-			<form>
-			  <div class='form_box'>
-				  <div class="half left">
-				    <input type="text" id="input-name" placeholder="Name">
-				    <input type="email" id="input-email" placeholder="Email address">
-				    <input type="text" id="input-subject" placeholder="Subject">
-				  </div>
-				  <div class="half right">
-				    <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
-				  </div>  
-			  </div>
-			  <input type="submit" value="Submit" id="input-submit">
-			</form>
+			<?php
+//if "email" variable is filled out, send email
+  if (isset($_REQUEST['email']))  {
+  
+  //Email information
+  $admin_email = "kamilkubiczek1@gmail.com";
+  $email = $_REQUEST['kontakt.sick@gmail.com'];
+  $subject = $_REQUEST['subject'];
+  $comment = $_REQUEST['comment'];
+  
+  //send email
+  mail($admin_email, "$subject", $comment, "From:" . $email);
+  
+  //Email response
+  echo "Thank you for contacting us!";
+  }
+  
+  //if "email" variable is not filled out, display the form
+  else  {
+?>
+
+ <form method="post">
+  Email: <input name="email" type="text" /><br />
+  Subject: <input name="subject" type="text" /><br />
+  Message:<br />
+  <textarea name="comment" rows="15" cols="40"></textarea><br />
+  <input type="submit" value="Submit" />
+  </form>
+  
+<?php
+  }
+?>
 		</div>		
 	</section> 
     <footer class='row'>           
