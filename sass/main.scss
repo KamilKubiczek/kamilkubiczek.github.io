@@ -691,10 +691,11 @@ ul {
 }
 
 .bottom_big {
-  display: inline-block;
-  vertical-align: middle;
+  //display: inline-block;
+  //vertical-align: middle;
   position:relative;
   display: flex;
+  display:-webkit-flex;
   flex-direction: column;
   align-items: center;
   top: -35vh;

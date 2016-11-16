@@ -91,7 +91,10 @@ width: 100%;
 	
 }
 @media (max-width: 550px) { [class*='section_skills'] {
-height: 100vh !important; }
+height: 300vh !important;
+background-image: none !important;
+background: #f7f7f7 !important;
+ }
 }
 @media (max-width: 550px) { [class*='col-'] {
 width: 100%; }
@@ -100,6 +103,7 @@ width: 100%; }
 background-size: auto;
  }
 }
+
 @media (max-width: 550px) { [class*='contact'] {
 border-right: none  !important;
 border-bottom: 1px solid black  !important;}
@@ -109,7 +113,8 @@ border-bottom: none  !important;
 }
 }
 @media (max-width: 550px) { [class*='btn-menu'] {
-right: 2vw  !important;
+right: 1vw  !important;
+margin-top: 0  !important;
 }
 }
 @media (max-width: 550px) { [id*='section_logo'] {

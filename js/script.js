@@ -309,6 +309,7 @@ if (scrollTop > stickyNavTop && width > 550 && !btn.hasClass('open')) {
     //btn.css("margin","0");
     
     btn.css("right","4vw");
+    btn.css("margin-top","0");
     //menu.find('a').css('font-size','5vh');
 
 } else if (width < 550 && !btn.hasClass('open')) { 
