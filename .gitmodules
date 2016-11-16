@@ -1,0 +1,3 @@
+[submodule "bhagaskara"]
+	path = bhagaskara
+	url = git:https://github.com/KamilKubiczek/Bhagaskara
