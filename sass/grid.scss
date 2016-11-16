@@ -121,8 +121,16 @@ margin-top: 0  !important;
 display: none  !important;
 }
 }
-
-
+@media (max-width: 550px) { [id*='portfolio'] {
+display: none  !important;
+}
+}
+@media (max-width: 550px) { [id*='portfolio2'] {
+display: flex  !important;
+flex-direction: column  !important;
+//display: flex  !important;
+}
+}
 
 @media (max-width: 550px) { [class*='slider'] {
 float: none;
