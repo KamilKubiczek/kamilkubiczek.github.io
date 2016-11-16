@@ -42,20 +42,18 @@ function star() {
 
 }
 else { 
- $('#sstar').animate({
-                   
-                   // height: '150px',
-                    //width: '150px'
-                });
+ $('#sstar').stop();
+ console.log('stop');
 
 
 
 }
 };
+ if (!width < 550 ) { 
 setInterval(function() {
    star();
-}, 4300);
-
+}, 3500);
+}
 
 
 
@@ -306,7 +304,9 @@ if (scrollTop > stickyNavTop && width > 550 && !btn.hasClass('open')) {
     btn.removeClass('hidden-btn');
     btn.css('display','block');
     menu2.addClass('hidden-nav');
-    btn.css("margin","0");
+    //btn.css("margin","0");
+    
+    btn.css("right","4vw");
     //menu.find('a').css('font-size','5vh');
 
 } else if (width < 550 && !btn.hasClass('open')) { 
@@ -315,11 +315,15 @@ if (scrollTop > stickyNavTop && width > 550 && !btn.hasClass('open')) {
     btn.css('position','fixed');
     btn.removeClass('hidden-btn');
     menu2.addClass('hidden-nav');
-    btn.css("margin","0");
+    btn.css("margin-right","20px");
 } else if (btn.hasClass('open')) { 
   console.log('open');
   //menu.css('font-family','gt_walsheim_proultra_light');
     
+}else if (scrollTop > stickyNavTop) { 
+  
+    btn.css("padding-right","20px");
+    btn.css("right","120px");
 }else {
     btn.removeClass('sticky');
     btn.css('position','');

@@ -105,8 +105,12 @@ border-right: none  !important;
 border-bottom: 1px solid black  !important;}
 }
 @media (max-width: 550px) { [class*='contact_info'] {
-
-margin-bottom: 0  !important;}
+border-bottom: none  !important;
+}
+}
+@media (max-width: 550px) { [class*='btn-menu'] {
+right: 5vw  !important;
+}
 }
 
 
