@@ -91,7 +91,7 @@ width: 100%;
 	
 }
 @media (max-width: 550px) { [class*='section_skills'] {
-height: 300vh; }
+height: 100vh !important; }
 }
 @media (max-width: 550px) { [class*='col-'] {
 width: 100%; }
@@ -109,7 +109,11 @@ border-bottom: none  !important;
 }
 }
 @media (max-width: 550px) { [class*='btn-menu'] {
-right: 5vw  !important;
+right: 2vw  !important;
+}
+}
+@media (max-width: 550px) { [id*='section_logo'] {
+display: none  !important;
 }
 }
 

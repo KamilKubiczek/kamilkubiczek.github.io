@@ -29,8 +29,10 @@ var width = $(window).width();
 function star() {
  if (!width < 550 ) { 
  $('#sstar').animate({
-                    left: '-120px',
-                    top: '500px',
+                    //left: '-120px',
+                    //top: '500px',
+                    left: '-5vw',
+                    top: '70vh',
                     opacity: '1',
                     reset: true,
                     delay: 600
@@ -52,7 +54,7 @@ else {
  if (!width < 550 ) { 
 setInterval(function() {
    star();
-}, 3500);
+}, 500);
 }
 
 
@@ -399,8 +401,12 @@ var menu = $('.menu').find('a');
 
 
 // PARALLAX 
+var width = $(window).width();
+
+
 
 $(document).ready(function() {
+     if (!width < 550 ) { 
 var movementStrength = 25;
 var height = movementStrength / $(window).height();
 var width = movementStrength / $(window).width();
@@ -414,8 +420,8 @@ $("#header").mousemove(function(e){
           var newvalueY = height * pageY * -1 - 150;
           $('#header').css("background-position", newvalueX+"px     "+newvalueY+"px");
 });
+}
 });
-
 
 
 
