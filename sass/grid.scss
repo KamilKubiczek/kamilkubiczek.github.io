@@ -96,6 +96,8 @@ height: 300vh; }
 @media (max-width: 550px) { [class*='col-'] {
 width: 100%; }
 }
+
+
 @media (max-width: 550px) { [class*='slider'] {
 float: none;
 width: 100%; }
