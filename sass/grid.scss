@@ -101,7 +101,7 @@ width: 100%; }
 }
 @media (max-width: 550px) { [id*='header'] {
 background-size: auto;
-background-attachment: none !important;
+background-attachment: scroll !important;
 background-image: url(../images/smaller.jpg)  no-repeat center !important;
  }
 }
