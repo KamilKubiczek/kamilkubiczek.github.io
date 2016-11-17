@@ -201,7 +201,7 @@ $(function(){
             ul.animate({left: -(widthLi*index)}, function(){
                 console.log(li.length, index);
                 if(index < 1 ) {
-                    index = 3; // tu miales niepotrzebnie 4
+                    index = 2; // tu miales niepotrzebnie 4
                     ul.css('left', -index*widthLi);
                 }
             });
