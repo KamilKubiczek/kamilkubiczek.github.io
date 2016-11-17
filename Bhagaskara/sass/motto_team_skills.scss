@@ -1,0 +1,246 @@
+.motto_background{
+	display:flex;
+	justify-content:center;
+	background-image: url('../images/background2.jpg');
+	background-size: cover;
+}
+#motto{
+	height: 40vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.motto{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	p{
+		font-family:'latolight';
+		font-size: 4vh;
+		color: white;
+	}
+	
+}
+.cloud_text{
+	width: 8vw;
+}
+.study{
+	width: 8vw;
+}
+
+
+
+.team_background{
+	display:flex;
+	justify-content:center;
+	background:#ffffff;
+}
+.team_1{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+.social_team{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	img{
+		padding: 13%;
+	}
+
+}
+.team{
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	h1{
+		color: #676767;
+		font-size: 6vh;
+	}
+
+	img{
+			width: 80%;
+		}
+	#team{
+		#our_team{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	
+
+		#arrows{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			#arrow_left{
+
+		
+			}
+			#arrow_right{
+
+		
+			}
+
+		
+		}
+	
+	
+	}	
+
+
+}
+
+
+
+.skills_background{
+	display:flex;
+	justify-content:center;
+	background:#ffffff;
+}
+.skills{
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	h1{
+		color: #676767;
+		font-size: 6vh;
+	}
+	.diagram_flex{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#skills{
+
+		#our_skills{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+	
+		}	
+
+	
+	}
+
+	#skills_diagrams{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+					.colors{
+							width: 100%;
+							height: 2vh;
+						}
+
+
+			.diagram_flex2{
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+				}
+			.diagram_flex_up{
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					width: 100%;
+			}
+
+		#left_diagrams{
+			padding: 5%;
+			.web_design{
+				.grey{
+					background:#f0f0f0;
+					position: relative;
+					width: 100%;
+					height: 100%;
+					.violet{
+						position:absolute;
+						background:#9f449b;
+						width: 0%;
+						height: 100%;
+
+					}
+
+				}
+	
+			}
+			.HTML{
+				.grey{
+					background:#f0f0f0;
+					position: relative;
+					width: 100%;
+					height: 100%;
+					.violet{
+						position:absolute;
+						background:#9f449b;
+						width: 0%;
+						height: 100%;
+
+					}
+
+				}
+
+	
+			}
+
+	
+		}
+		#right_diagrams{
+			padding: 5%;
+			.graphic_design{
+				.grey{
+					background:#f0f0f0;
+					position: relative;
+					width: 100%;
+					height: 100%;
+					.violet{
+						position:absolute;
+						background:#9f449b;
+						width: 0%;
+						height: 100%;
+
+					}
+
+				}
+
+	
+			}
+			.UL{
+				.grey{
+					background:#f0f0f0;
+					position: relative;
+					width: 100%;
+					height: 100%;
+					.violet{
+						position:absolute;
+						background:#9f449b;
+						width: 0%;
+						height: 100%;
+
+					}
+
+				}
+
+	
+			}
+
+	
+		}
+
+	
+	}
+	
+
+}
