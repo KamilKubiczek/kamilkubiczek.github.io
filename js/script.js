@@ -335,7 +335,7 @@ $('.menu').on('click',function(){
 
 // PODWÓJNE KLIKANIE IPHONE
 
-$('a').on('click touchend', function(e) {
+$('.menu').find('a').on('click touchend', function(e) {
     
    // window.location = link;
     btn.removeClass('open');
