@@ -5,26 +5,11 @@ $(window).on('scroll', function() {
     $('#header').css('background-size', 100 + parseInt(x / 10, 0) + '% ');
 });*/
 
-//HAMBURGER MENU 
-/*
-$(document).ready(function() {
-var movementStrength = 25;
-var height = movementStrength / $(window).height();
-var width = movementStrength / $(window).width();
-$("#header").mousemove(function(e){
-          var pageX = e.pageX - ($(window).width() / 2);
-          var pageY = e.pageY - ($(window).height() / 2);
-          var newvalueX = width * pageX * -1 - 25;
-          var newvalueY = height * pageY * -1 - 50;
-          $('#header').css("background-position", newvalueX+"px     "+newvalueY+"px");
-});
-});*/
+
 
 
 // SHOOTING STAR 
 
- //$('#sstar').delay(1000).animate({'opacity':1}, 300);
- //var refreshId = setInterval(function() {
 var width = $(window).width();
 function star() {
 if ( $(window).width() > 550) {
@@ -53,18 +38,6 @@ setInterval(function() {
 
 
 
-//var pix = 550px; 
-      
-
-
-
-
-//star();
-//setInterval(1);
-      // Do something every 5 seconds
-//}, 1000);
-
-
 
 
 
@@ -73,6 +46,7 @@ setInterval(function() {
 // MENU SLIDE DOWN
 
 
+      
 
     var menu = $('.menu');
     var bottom = $('.bottom_big');
@@ -90,6 +64,19 @@ setInterval(function() {
 
         $('html,body').animate({scrollTop: position.top}, 1500);
     })
+      if ( $(window).width() < 550) {
+         menu.find('a').on('click',function(e){
+        //console.log('działa');
+        e.preventDefault();
+        var href = $(this).attr('data');
+        //console.log(href);
+        var position = $(href).offset();
+        //console.log(position.top);
+
+        $('html,body').animate({scrollTop: position.top}, 1500);
+    })
+                }
+         
 
     bottom.find('a').on('click',function(e){
         //console.log('działa');
@@ -164,18 +151,7 @@ var skills = document.querySelectorAll('#skills');
         origin: 'right',
         duration: 1000,
     });
-/*
-    sr.reveal(img, {
-        reset: true,
-        delay: 200,
-      //  easing   : 'ease-in-out',
-        distance: '0',
-        scale: 1,
-        origin: 'right',
-        duration: 600,
-    });*/
 
-//
 $(function(){
     //console.log('DOM!');
     $(document).ready(function(){
@@ -433,6 +409,12 @@ $('#section_logo').find('img').show();
 */
 });
 	
+
+
+// HAMBURGER MENU
+
+
+
 function _btnMenuInit() {
   
      var btn = document.querySelector('.btn-menu'),
