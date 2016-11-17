@@ -331,6 +331,18 @@ $('.menu').on('click',function(){
 
 //})
 
+
+
+// PODWÓJNE KLIKANIE IPHONE
+
+$('a').on('click touchend', function(e) {
+var el = $(this);
+var link = el.attr('href');
+window.location = link;
+});
+
+
+
 // PODREŚLENIE PO NAJECHANIU
 /*
     var menu = $('.menu').find('a');
