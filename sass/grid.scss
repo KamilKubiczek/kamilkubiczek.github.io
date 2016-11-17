@@ -101,7 +101,8 @@ width: 100%; }
 }
 @media (max-width: 550px) { [id*='header'] {
 background-size: auto;
-//background-image: url('https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/GTDKKKRP55.jpg');
+background-attachment: '' !important;
+background-image: url(../images/smaller.jpg) !important;
  }
 }
 
