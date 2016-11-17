@@ -77,12 +77,13 @@ header {
 }
 #header {
 	height: 100vh;
+	background-color: #464646;
 	background-image: url(../images/StockSnap_GTDKKKRP55-kopia_2-compressor.jpg);
 	background-position: center;
   	background-repeat: no-repeat;
   	background-attachment: fixed;
   	background-size: calc(cover+1vw);
-  	//background-color: #464646;
+  	
   	position: relative;
   
 }
