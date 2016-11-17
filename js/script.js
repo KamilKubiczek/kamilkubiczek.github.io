@@ -27,7 +27,7 @@ $("#header").mousemove(function(e){
  //var refreshId = setInterval(function() {
 var width = $(window).width();
 function star() {
- if (!width < 550 ) { 
+if ( $(window).width() > 550) {
  $('#sstar').animate({
                     //left: '-120px',
                     //top: '500px',
@@ -43,19 +43,13 @@ function star() {
 
 
 }
-else { 
- $('#sstar').stop();
- console.log('stop');
 
-
-
-}
 };
- if (!width < 550 ) { 
+
 setInterval(function() {
    star();
-}, 500);
-}
+}, 3500);
+
 
 
 
@@ -264,7 +258,7 @@ skills.on('mouseout', function(){
 */
 
 // SLIDER BLUR
-
+/*
 $('#portfolio').on('mouseenter', function(){
 
   $(this).find('img').animate({
@@ -284,7 +278,7 @@ $('#portfolio').on('mouseleave', function(){
         }, 300)
        // $(this).find('hr').css('')
     
-})
+})*/
 
 //STICKY MENU
 
@@ -407,10 +401,11 @@ var width = $(window).width();
 
 
 $(document).ready(function() {
-     if (!width < 550 ) { 
+    
 var movementStrength = 25;
 var height = movementStrength / $(window).height();
 var width = movementStrength / $(window).width();
+if ( $(window).width() > 550) {
 $("#header").mousemove(function(e){
            // $('#header').animate({
            //     transform: 'scale(1.1)'
