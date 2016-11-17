@@ -256,6 +256,13 @@ $('#portfolio').on('mouseleave', function(){
     
 })*/
 
+
+
+
+
+
+
+
 //STICKY MENU
 
 
@@ -315,6 +322,12 @@ stickyNav();
 $(window).scroll(function() {
   stickyNav();
 });
+
+$('.menu').on('click',function(){
+    btn.removeClass('open');
+    $('ul').removeClass('sidenav');
+    menu2.addClass('hidden-nav');
+})
 
 //})
 
