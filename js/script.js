@@ -322,12 +322,12 @@ stickyNav();
 $(window).scroll(function() {
   stickyNav();
 });
-
+/*
 $('.menu').on('click',function(){
     btn.removeClass('open');
     $('ul').removeClass('sidenav');
     menu2.addClass('hidden-nav');
-})
+})*/
 
 //})
 
@@ -336,9 +336,18 @@ $('.menu').on('click',function(){
 // PODWÓJNE KLIKANIE IPHONE
 
 $('a').on('click touchend', function(e) {
-var el = $(this);
-var link = el.attr('href');
-window.location = link;
+    var el = $(this);
+    var link = el.attr('href');
+   // window.location = link;
+    btn.removeClass('open');
+    $('ul').removeClass('sidenav');
+    menu2.addClass('hidden-nav');
+         e.preventDefault();
+       
+        var position = $(link).offset();
+        console.log(position.top);
+
+        $('html,body').animate({scrollTop: position.top}, 1500);
 });
 
 
