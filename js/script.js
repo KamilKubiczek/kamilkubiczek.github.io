@@ -405,7 +405,7 @@ $(document).ready(function() {
 var movementStrength = 25;
 var height = movementStrength / $(window).height();
 var width = movementStrength / $(window).width();
-if ( $(window).width() > 550) {
+
 $("#header").mousemove(function(e){
            // $('#header').animate({
            //     transform: 'scale(1.1)'
@@ -416,7 +416,7 @@ $("#header").mousemove(function(e){
           var newvalueY = height * pageY * -1 - 150;
           $('#header').css("background-position", newvalueX+"px     "+newvalueY+"px");
 });
-}
+
 });
 
 
