@@ -1,5 +1,8 @@
 <?php
  
+echo"test";
+exit;
+
 if(isset($_POST['email'])) {
  
      
