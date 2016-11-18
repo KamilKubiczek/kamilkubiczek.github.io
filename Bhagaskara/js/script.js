@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 // MENU SLIDE
 
-	
+    
     var icons = $('header');
     var menu = $('nav');
    
@@ -43,10 +43,15 @@ var stickyNavTop = $('nav').offset().top;
 var stickyNav = function(){
 var scrollTop = $(window).scrollTop();
       
-if (scrollTop > stickyNavTop + 300) { 
+if (scrollTop > stickyNavTop + 300 && $(window).width() > 550) { 
     $('nav').addClass('sticky');
+    $('.btn-menu').addClass('sticky');
+} else if ( scrollTop > stickyNavTop + 300 && $(window).width() < 550)  { 
+    $('nav').removeClass('sticky');
+    $('.btn-menu').addClass('sticky');
 } else {
     $('nav').removeClass('sticky'); 
+    $('.btn-menu').addClass('sticky');
 }
 };
  
@@ -130,6 +135,122 @@ $('.web_design').find(violet).animate({
        
        // $(this).find('hr').css('')
    
+
+// HAMBURGER MENU 
+
+
+
+
+
+
+
+
+
+/*
+var width = $(window).width();
+function nav(){
+if ( $(window).width() < 550) {
+console.log('działa');
+$('#nav_text').find('ul').addClass('hidden-nav');
+$('#nav_text').find('.btn-menu').removeClass('hidden-btn');
+
+
+
+} else  {
+console.log('działa2');
+$('#nav_text').find('ul').removeClass('hidden-nav');
+$('#nav_text').find('.btn-menu').addClass('hidden-btn');
+
+
+
+}
+}
+
+nav();
+
+
+$('.btn-menu').on('click', function(){
+    $(this).toggleClass('open');
+})
+*/
+
+
+
+
+
+
+
+
+
+
+
+function _btnMenuInit() {
+  
+     var btn = document.querySelector('.btn-menu'),
+         nav = document.querySelector('.menu2'),
+         navUl = document.querySelector('.menu');
+
+        btn.addEventListener('click', function(){
+           //console.log('działa');
+           nav.classList.toggle('hidden-nav');
+           navUl.classList.toggle('nav-mobile');
+        });
+ }
+
+function _showBtn(){
+    var btn = document.querySelector('.btn-menu');
+        btn.classList.remove('hidden-btn');
+         
+ }
+
+  function _hideBtn(){
+    var btn = document.querySelector('.btn-menu');
+        btn.classList.add('hidden-btn');
+ }
+
+ function _showNav(){
+        var nav = document.querySelector('.menu2'),
+            navUl = document.querySelector('.menu');
+
+            nav.classList.remove('hidden-nav');
+            navUl.classList.remove('nav-mobile');
+ }
+
+ function _hideNav(){
+        var nav = document.querySelector('.menu2');
+            nav.classList.add('hidden-nav');
+ }
+ 
+
+function test_match_media_with_listener(){
+    var mq = window.matchMedia("(max-width: 650px)");
+    mq.addListener(WidthChange);
+    WidthChange(mq);
+
+    function WidthChange(mediaQuery) {
+ 
+        if(mediaQuery.matches) {
+              _hideNav();
+             _showBtn();
+            console.log('yes');
+         
+        } else {
+           _showNav();
+            _hideBtn();
+            console.log('no');
+        }
+    }
+}
+
+
+
+    
+     test_match_media_with_listener();
+     
+    _btnMenuInit();
+
+
+
 
 
 
