@@ -33,6 +33,32 @@ document.addEventListener('DOMContentLoaded', function(){
     
 
 
+// PODWÓJNE KLIKANIE IPHONE
+
+$('.menu').find('a').on('click touchend', function(e) {
+    
+   // window.location = link;
+    btn.removeClass('open');
+    $('ul').removeClass('sidenav');
+    menu2.addClass('hidden-nav');
+        e.preventDefault();
+        var el = $(this);
+        var link = el.attr('href');
+        var position = $(link).offset();
+        
+
+        $('html,body').animate({scrollTop: position.top}, 1500);
+
+      if (link == '#portfolio'){
+        var data = el.attr('data');
+        var position2 = $(data).offset();
+        
+
+        $('html,body').animate({scrollTop: position2.top}, 1500);
+    }
+});
+
+
 
 // STICKY MENU 
 
