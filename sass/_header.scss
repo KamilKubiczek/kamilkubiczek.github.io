@@ -1,3 +1,149 @@
 header {
-	border: 1px solid $font2Color;
+	display:flex;
+	flex-direction:column;
+	justify-content: space-between;
+	position:relative;
+	#cien{
+		
+		width: 100vw;
+		z-index: 0;
+		//padding-top:10%;
+		
+	}
+	#cien2{
+		
+		width: 100vw;
+		z-index: 0;
+		//flex-grow: 1.5;
+		display: flex;
+		flex-direction:column;
+		justify-content: flex-end;
+	}
+  
+}
+#header {
+	height: 100vh;
+	background-color: #464646;
+	background-image: url(../images/StockSnap_GTDKKKRP55-kopia_2-compressor.jpg);
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: calc(cover + 1px);
+  	
+  	position: relative;
+  
+}
+.header {
+	display:flex;
+	flex-direction: column;
+
+  
+}
+
+nav {
+
+	height: 20vh;
+	background: none;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 3%;
+
+	.menu{
+		display: flex;
+		align-items: center;
+
+
+	}
+	#logo{
+		margin-top: -2%;
+	}
+	img{
+		height: 10vh; 
+		padding-left: 5vw;
+		-webkit-transition: .5s ease-in-out;
+  	-moz-transition: .5s ease-in-out;
+  	-o-transition: .5s ease-in-out;
+  	transition: .5s ease-in-out;
+	}
+	ul {
+		padding: 0;
+		-moz-transition: .5s ease-in-out;
+  	-o-transition: .5s ease-in-out;
+  	transition: .5s ease-in-out;
+
+	}
+	li {
+		display: inline-block;
+		padding: 2vw;
+		font-size: 8vh;
+
+		a {
+		text-decoration: none;
+		color:rgba(white,.8);
+		-webkit-transition: .5s ease-in-out;
+  	-moz-transition: .5s ease-in-out;
+  	-o-transition: .5s ease-in-out;
+  	transition: .5s ease-in-out;
+  	display: flex;
+  	flex-direction: column;
+
+
+
+
+		}
+		a:hover {
+			color: white;
+
+		}
+	}
+	hr {
+		background: #455247; /* fallback for old browsers */
+		background: -webkit-linear-gradient(to left, #455247 , #FFE8AF); /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to left, #455247 , #FFE8AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		width: 0;
+		height: .2vh;
+		border: 0;
+		margin-top: .4em;
+		margin-left: 0;	
+		padding-left: 0;	
+		overflow: hidden;
+		
+		
+
+	}
+}
+
+#title{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top:15%;
+	
+
+}
+.title {
+	display: flex;
+	flex-direction: column;
+	justify-content:  space-between;
+	align-items: center;
+	height: 80vh;
+	color: white;
+
+
+
+	p{
+		font-family: 'aileronsregular';
+		color: white;
+		font-size: 5vh;
+		color:rgba(white,.9);
+
+	}
+	h2 {
+		font-family: 'aileronsregular';
+		color: white;
+		font-size: 12vh;
+		color:rgba(white,.9);
+	}
 }

@@ -45,7 +45,14 @@ setInterval(function() {
 
 // MENU SLIDE DOWN
 
-
+ 
+         $('#port').find('a').on('click',function(e){
+            if ( $(window).width() < 550) {
+       $(this).removeAttr("href");
+       $(this).attr("href", "#portfolio2");
+        }
+    })
+               
       
 
     var menu = $('.menu');
@@ -64,18 +71,7 @@ setInterval(function() {
 
         $('html,body').animate({scrollTop: position.top}, 1500);
     })
-      if ( $(window).width() < 550) {
-         menu.find('a').on('click',function(e){
-        //console.log('działa');
-        e.preventDefault();
-        var href = $(this).attr('data');
-        //console.log(href);
-        var position = $(href).offset();
-        //console.log(position.top);
-
-        $('html,body').animate({scrollTop: position.top}, 1500);
-    })
-                }
+     
          
 
     bottom.find('a').on('click',function(e){
@@ -175,7 +171,7 @@ $(function(){
         var li = slider.find('li');
         
         var index = 1;
-        var widthLi = li.first().width();
+        var widthLi = li.first().innerWidth();
         
         var first = li.first().clone();
         var last = li.last().clone();
@@ -349,7 +345,7 @@ $('.menu').find('a').on('click touchend', function(e) {
 
         $('html,body').animate({scrollTop: position.top}, 1500);
 
-      if (link == '#portfolio'){
+      if (link == '#portfolio' && $(window).width() < 550){
         var data = el.attr('data');
         var position2 = $(data).offset();
         
@@ -360,19 +356,18 @@ $('.menu').find('a').on('click touchend', function(e) {
 
 
 
-// PODREŚLENIE PO NAJECHANIU
-/*
-    var menu = $('.menu').find('a');
-   var menu_hr = menu.find('hr');
-    menu.on('mouseover', function(){
-        console.log('działa')
-        $(this).find('hr').css('opacity','0.7')
-        menu_hr.animate({ 
-        display: 'block',
-        opacity: '1',    
-        },3000);
-    })
-*/
+// WYŚWIETLANIE SLIDERA W SAFARI
+if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1)  {
+//document.addEventListener('load', function(){
+ 
+   $('#portfolio').css('display','none');
+   $('#portfolio2').css('display','block');
+   $('#portfolio2').css('height','100vh');
+   $('#warsztat').css('height','100px');
+
+
+};
+
 
 //PODKREŚLENIA
 
@@ -423,7 +418,7 @@ $(document).ready(function() {
 var movementStrength = 25;
 var height = movementStrength / $(window).height();
 var width = movementStrength / $(window).width();
-if ( $(window).width() > 550) {
+if ( $(window).width() > 550   && $(window).width() < 1500) {
 $("#header").mousemove(function(e){
            // $('#header').animate({
            //     transform: 'scale(1.1)'
@@ -437,6 +432,9 @@ $("#header").mousemove(function(e){
 }
 });
 
+if ($(window).width() > 1500) {
+    $('#header').css('background-size','cover');
+};
 
 
 /*

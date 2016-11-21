@@ -1,4 +1,45 @@
-section {
-	padding-top: $topPadding;
-	padding-bottom: $bottomPadding;
+#section_text{
+	height: 100vh;
+	display: flex;
+	background: none;
+
+}
+#section_text_inside{
+	height: 100%;
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	padding: 5%;
+	flex-direction: column;
+	h1{
+		
+		color: #4a4a4a;
+
+	}
+	p{
+		font-family: 'gt_walsheim_prolight';
+		color: #4a4a4a;
+		text-align: justify;
+	}
+	hr {
+	width: 11em;
+	height: .2em;
+	border: 0;
+	margin: 0% 1% 3% 0;
+	//display: none;
+	}
+
+}
+	
+
+
+
+#section_logo{
+	height: 100vh;
+	background: none;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+
 }

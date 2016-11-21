@@ -1,0 +1,50 @@
+.skills_row{
+	height:33.33vh;
+	#html{
+		height: 70%;
+	}
+	#css{
+		height: 70%;
+	}
+	#js{
+		height: 70%;
+	}
+	#jquery{
+		height: 70%;
+	}
+	#sass{
+		height: 70%;
+	}
+	#git{
+		height: 70%;
+	}
+	#wp{
+		height: 70%;
+	}
+	#php{
+		height: 70%;
+	}
+	#ps{
+		height: 70%;
+	}
+}
+#skills {
+	background-image: url(../images/StockSnap_GTDKKKRP55-kopia_2-compressor.jpg);
+	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+
+}
+.skills {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all .2s ease-in-out;
+	opacity: .7;
+	&:hover {
+		transform: scale(1.2);
+		opacity: 1;
+	}
+}
