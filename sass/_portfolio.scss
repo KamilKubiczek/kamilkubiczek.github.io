@@ -1,9 +1,11 @@
 #slider {
     height:100vh;
     overflow: hidden;
+
     ul {
   list-style: none;
   position: relative;
+
 
 
 }
@@ -11,6 +13,8 @@
     li {
         float: left;
         position: relative;
+        width: 100vw !important;
+   
         span{
             position: absolute;
             vertical-align: center;
@@ -27,6 +31,7 @@
         z-index: 3;
     }
 }
+
 
 
 #prevPicture{
@@ -88,7 +93,7 @@ margin-right: 90vw;
 }
 #bhagaskara{
     position:relative;
-
+    width: 100vw !important;
     -webkit-transition: opacity 0.8s ease-in-out;
     -moz-transition: opacity 0.8s ease-in-out;
     -o-transition: opacity 0.8s ease-in-out;
@@ -97,7 +102,7 @@ margin-right: 90vw;
 }
 #warsztat{
     position:relative;
-
+width: 100vw !important;
     -webkit-transition: opacity 0.8s ease-in-out;
     -moz-transition: opacity 0.8s ease-in-out;
     -o-transition: opacity 0.8s ease-in-out;
@@ -108,7 +113,7 @@ margin-right: 90vw;
     position:relative;
     top:0;
     left:0;
-    z-index:1
+    z-index:1;
 }
 .overlay {
     position:absolute;

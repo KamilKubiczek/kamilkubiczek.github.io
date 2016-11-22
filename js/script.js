@@ -357,7 +357,7 @@ $('.menu').find('a').on('click touchend', function(e) {
 
 
 // WYŚWIETLANIE SLIDERA W SAFARI
-if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1)  {
+/*if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1)  {
 //document.addEventListener('load', function(){
  
    $('#portfolio').css('display','none');
@@ -366,7 +366,7 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
    $('#warsztat').css('height','100px');
 
 
-};
+};*/
 
 
 //PODKREŚLENIA
