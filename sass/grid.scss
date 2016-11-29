@@ -90,52 +90,52 @@ width: 100%;
 	
 	
 }
-@media (max-width: 550px) { [class*='section_skills'] {
+@media (max-width: 650px) { [class*='section_skills'] {
 height: 300vh !important;
 background-image: none !important;
 background: #f7f7f7 !important;
  }
 }
-@media (max-width: 550px) { [class*='col-'] {
+@media (max-width: 650px) { [class*='col-'] {
 width: 100%; }
 }
-@media (max-width: 550px) { [id*='header'] {
+@media (max-width: 650px) { [id*='header'] {
 background-size: auto;
 background-attachment: scroll !important;
 background-image: url(../images/smaller.jpg)  no-repeat center !important;
  }
 }
 
-@media (max-width: 550px) { [class*='contact'] {
+@media (max-width: 650px) { [class*='contact'] {
 border-right: none  !important;
 border-bottom: 1px solid black  !important;}
 }
-@media (max-width: 550px) { [class*='contact_info'] {
+@media (max-width: 650px) { [class*='contact_info'] {
 border-bottom: none  !important;
 }
 }
-@media (max-width: 550px) { [class*='btn-menu'] {
+@media (max-width: 650px) { [class*='btn-menu'] {
 right: 1vw  !important;
 margin-top: 0  !important;
 }
 }
-@media (max-width: 550px) { [id*='section_logo'] {
+@media (max-width: 650px) { [id*='section_logo'] {
 display: none  !important;
 }
 }
-@media (max-width: 550px) { [id*='portfolio'] {
+@media (max-width: 650px) { [id*='portfolio'] {
 display: none  !important;
 }
 }
 
-@media (max-width: 550px) { [id*='portfolio2'] {
+@media (max-width: 650px) { [id*='portfolio2'] {
 display: flex  !important;
 flex-direction: column  !important;
 //display: flex  !important;
 }
 }
 
-@media (max-width: 550px) { [class*='slider'] {
+@media (max-width: 650px) { [class*='slider'] {
 float: none;
 width: 100%; }
 }
