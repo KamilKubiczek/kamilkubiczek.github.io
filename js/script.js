@@ -165,7 +165,7 @@ $(function(){
             ul.animate({left: -(widthLi*index)}, function(){
                 console.log(li.length, index);
                 if(index < 1 ) {
-                    index = 2; 
+                    index = 3; 
                     ul.css('left', -index*widthLi);
                 }
             });

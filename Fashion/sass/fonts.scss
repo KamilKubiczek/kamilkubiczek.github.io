@@ -1,0 +1,45 @@
+@font-face {
+font-family: 'Museo Sans Cyrl 500';
+font-style: normal;
+font-weight: normal;
+src: local('Museo Sans Cyrl 500'), url('../fonts/MuseoSansCyrl_1.woff') format('woff');
+}
+
+.museo_mid{
+	font-family: 'Museo Sans Cyrl 500';
+}
+
+@font-face {
+font-family: 'Museo Sans Cyrl 700';
+font-style: normal;
+font-weight: normal;
+src: local('Museo Sans Cyrl 700'), url('../fonts/MuseoSansCyrl_2.woff') format('woff');
+}
+.museo_big{
+	font-family: 'Museo Sans Cyrl 700';
+}
+
+
+@font-face {
+    font-family: 'cradleytitleregular';
+    src: url('../fonts/cradleytitle-regular2-webfont.woff2') format('woff2'),
+         url('../fonts/cradleytitle-regular2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.cradley{
+	 font-family: 'cradleytitleregular';
+}
+
+@font-face {font-family: "Circe W01 Regular";
+  src: url("../fonts/a36ba785e81731a19d4370724150360b.eot"); /* IE9*/
+  src: url("../fonts/a36ba785e81731a19d4370724150360b.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/a36ba785e81731a19d4370724150360b.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/a36ba785e81731a19d4370724150360b.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/a36ba785e81731a19d4370724150360b.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/a36ba785e81731a19d4370724150360b.svg#Circe W01 Regular") format("svg"); /* iOS 4.1- */
+}
+
+.circe{
+	font-family: "Circe W01 Regular";
+}
